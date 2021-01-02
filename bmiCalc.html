@@ -21,7 +21,7 @@
           style="text-align: center; font-size: 1rem; margin: 0.4rem"
         />
       </div>
-      <div class="center">
+      <div class="center" id="H">
         <input
           dir="rtl"
           type="text"
@@ -62,7 +62,31 @@
               يا للهول! 😲          أكبر من أو يساوي 30
               لا أدري! 🤷🏻‍♀️                   أي شي ثاني
         */
-      }
+
+        let weight = document.getElementById(`weight`)
+        let height = document.getElementById(`height`)
+        let BMI = (weight.Value / (height.Value * height.Value ))
+
+        console.log(weight.Value)
+        console.log(height.Value)
+        console.log(BMI)
+
+
+
+        if (BMI <= 20){
+          alart(`أنت نحيف للغاية`)
+        }
+        else if (BMI<29 && BMI>20){
+          alart(`وزنك جيد`)} 
+        
+        else if (BMI <= 30){
+          alart(`يا للهول! 😲 `) }
+        
+        else {alart(`لا أدري! 🤷🏻‍♀️`)} 
+
+        }
+         
+      
     </script>
   </body>
 </html>
